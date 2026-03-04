@@ -115,7 +115,7 @@ export default function RegisterPage() {
     try {
       const res = await fetch(
         // `${process.env.NEXT_PUBLIC_API_URL}/api/applicant/send-verification`,
-        "https://lackadaisically-untapped-carmina.ngrok-free.dev/api/applicant/send-verification",
+        "https://login-main-1yq9.onrender.com/api/applicant/send-verification",
         {
           method: "POST",
           headers: {
@@ -216,7 +216,7 @@ if (data.verified === true) {
     formData.append("resume_path", resume_path);
 
     const res = await fetch(
-      "https://lackadaisically-untapped-carmina.ngrok-free.dev/api/applicant/submit",
+      "https://login-main-1yq9.onrender.com/api/applicant/submit",
       {
         method: "POST",
         body: formData,
