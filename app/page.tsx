@@ -47,7 +47,7 @@ const [feedbackType, setFeedbackType] = useState<"success" | "error" | "">("");
         formData.append("resume_path", resume_path);
       }
 
-      const res = await fetch("https://mansi.durvasaprakrutik.com/api/applicant/submit", { // Backednd api
+      const res = await fetch("https://login-main-1yq9.onrender.com/api/applicant/submit", { // Backednd api
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
